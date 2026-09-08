@@ -1,0 +1,10 @@
+# previous version of the site, kept locally as a backup only
+_old-2025-08/
+
+# build output and archives
+_deploy/
+*.zip
+
+# editor / tooling
+.idea/
+.claude/

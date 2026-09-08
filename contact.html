@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <!-- Google Fonts: Noto Sans KR, Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/aabd5cc9c3.js" crossorigin="anonymous"></script>
+
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <!-- Bootstrap GRID only (safe import) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"> 
+  <link rel="stylesheet" href="assets/css/util.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> NAVYZ</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+  <div id="sub-page" class="sub-page">
+    <!-- ============================= Header ============================= -->
+   <header>
+      <div class="container nav" role="navigation" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Home"> 
+          <img src="assets/images/navyz-logo2x.png" alt="Logo"> 
+        </a>
+
+        <nav class="menu">
+          <button type="button" class="menu-btn" data-menu="product" aria-controls="mega-product" aria-expanded="false">Products <span class="chev"></span></button>
+          <!-- ============================= Mega: Products ============================= -->
+          <div id="mega-product" class="mega" role="region" aria-label="Products">
+            <div class="product-menu-list">
+              <a class="product-menu-item" href="products.html">
+                <span>POS &amp; Kiosk</span>
+              </a>
+              <a class="product-menu-item" href="online.html">
+                <span>Online Ordering</span>
+              </a>
+              <a class="product-menu-item" href="web.html">
+                <span>Web Solution</span>
+              </a>
+            </div>
+          </div>
+          <a href="blog.html" class="menu-link active">Blog</a> 
+          <a href="login.html" class="menu-link">Login</a>
+        </nav>
+
+        <div class="nav-right">
+          <div class="nav-cta">
+            <a class="demo" href="contact.html">Free Demo <i class="fa-solid fa-arrow-right"></i></a> 
+          </div>
+          <div class="nav-all-menu">
+            <div class="all-menu-icon"> <img src="assets/images/all-menu.svg" alt="all-menu"></div>
+              <div class="all-menu-list">
+                <ul>
+                  <li><a href="contact.html">Free Demo</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li class="products-submenu">
+                    <span class="submenu-title">Products</span>
+                    <ul class="submenu-items">
+                      <li><a href="products.html">POS &amp; Kiosk</a></li>
+                      <li><a href="online.html">Online Ordering</a></li>
+                      <li><a href="web.html">Web Solution</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li> 
+                  <!-- <li><a class="demo" href="#">Free Demo <i class="fa-solid fa-arrow-right"></i></a> </li> -->
+                </ul>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="contact-container">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-left"> 
+            <h2> <span class="sub-title">Limited Time Offer</span>From accepting payments to extensive reporting, our Point of Sale has everything you’ve ever wished for.</h2>
+            <p>The powerful POS solution that you only need for your successful business. Please complete the form below and we will respond as soon as possible generally within a day. Thanks!</p>
+            <ul class="contact-info">
+              <li><i class="fa-solid fa-check"></i> Suitable for All Businesses </li>
+              <li><i class="fa-solid fa-check"></i> Extensive Reporting</li>
+              <li><i class="fa-solid fa-check"></i> Employee Management</li>
+              <li><i class="fa-solid fa-check"></i> Inventory Control</li>
+              <li><i class="fa-solid fa-check"></i> Gift Card & Loyalty Program</li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <div class="inner">
+              <div class="txt-box">
+                <h4>Contact us</h4>
+                <p>Request a Callback <i class="fa-solid fa-phone"></i> 1-888-339-0100</p>
+              </div>
+              <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                  <label for="business-name">
+                    <span> Business Name</span> 
+                    <span class="required">*</span>
+                  </label>
+                  <input type="text" id="business-name" name="business-name" placeholder="Business Name" required>        
+                </div> 
+                <div class="form-group">
+                  <label for="contact-name">
+                    <span>Contact Name</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input type="text" id="contact-name" name="contact-name" placeholder="Contact Name" required>        
+                </div>
+                <div class="form-group">
+                  <label for="phone">
+                    <span>Phone number</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone" required>        
+                </div>
+                <div class="form-group">
+                  <label for="email">
+                    <span>Email</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input type="email" id="contact_email" name="contact_email" placeholder="Email" required>        
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <span>Preferred language</span>
+                  </label>
+                  <div class="input">
+                    <select id="preferred_language" class="" name="preferred_language">
+                      <option disabled="" value="">Please Select</option>
+                      <option value="English">English</option>
+                      <option value="Chinese">Chinese</option>
+                      <option value="Espanol">Espanol</option>
+                      <option value="Korean">Korean</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <span>Most Interested in Learning about</span>
+                  </label>
+                  <div class="input">
+                    <select id="most_interested" class="" name="most_interested">
+                      <option disabled="" value="">Kiosk</option>
+                      <option value="Handheld POS">Handheld POS</option>
+                      <option value="POS">POS</option>
+                      <option value="Ordering Tablet">Ordering Tablet</option>
+                      <option value="KDS">KDS</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Message" required></textarea>        
+                </div>
+
+                <div class="bottom">
+                  <label class="checkbox remember">
+                    <span class="checkbox__input">
+                      <span class="checkbox__inner"></span>
+                      <input type="checkbox" aria-hidden="false" class="checkbox__original" value="">
+                    </span>
+                    <span class="checkbox__label"> Yes, I'd like to receive updates and promotional emails from NAVYZ.</span>
+                  </label>
+                  <button type="submit" class="btn"> SUBMIT </button>
+                </div>
+              </form>
+            </div>
+          </div> 
+        </div> 
+      </div>
+    </div>
+      
+
+  <!-- ============================= Footer ============================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="top">
+            <div class="footer-logo"> <img src="assets/images/navyz-logo.png" alt="Footer Logo"></div>
+            <p>&copy; 2025 NZ System. All rights reserved.</p>
+          </div>
+          <div class="link-container">
+            <div class="link-item">
+              <h5>PRODUCTS</h5>
+              <ul>
+                <li><a href="products.html">POS &amp; Kiosk</a></li>
+                <!--            <li><a href="#">Handheld POS</a></li>-->
+                <!--            <li><a href="#">POS</a></li>-->
+                <!--            <li><a href="#">Ordering Tablet</a></li>-->
+                <!--            <li><a href="#">KDS</a></li>-->
+                <!--           <li><a href="#">Branded app</a></li>-->
+                <li><a href="online.html">Online Ordering</a></li>
+                <li><a href="web.html">Web Solution</a></li>
+              </ul>
+            </div>
+            <!--  <div class="link-item">
+                      <h5>INDUSTRIES</h5>
+                      <ul>
+                        <li><a href="#">Restaurant and QSR</a></li>
+                        <li><a href="#">Salon and SPA</a></li>
+                        <li><a href="#">Retail and Market</a></li>
+                     </ul>
+                   </div>
+                         -->
+
+            <div class="link-item">
+              <h5>COMPANY</h5>
+              <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="policy.html">Privacy policy</a></li>
+                <li><a href="terms.html">Terms of service</a></li>
+              </ul>
+            </div>
+
+            <div class="link-item">
+              <h5>RELATED SITES</h5>
+              <ul>
+                <li><a href="https://www.iorderfoods.com/">iOrderFoods</a> </li>
+                <li><a href="https://vvipcare.com/">VVIP Care</a></li>
+                <li><a href="https://hommeface.com/">HommeFace</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+$(function(){
+  // =============================
+  // Header height sync (CSS var)
+  // =============================
+  function syncHeader(){ var h = $('.nav').outerHeight()||68; document.documentElement.style.setProperty('--header-h', h + 'px'); }
+  syncHeader(); $(window).on('resize', syncHeader);
+
+  // =============================
+  // Header scroll effect
+  // =============================
+  function checkScrolled() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 100) {
+      $('header').addClass('scrolled');
+    } else {
+      $('header').removeClass('scrolled');
+    }
+  }
+  
+  // 페이지 로드 시 스크롤 위치 확인
+  checkScrolled();
+  
+  // 스크롤 이벤트 리스너
+  $(window).on('scroll', checkScrolled);
+
+  // =============================
+  // All Menu Toggle
+  // =============================
+  $('.all-menu-icon').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('All menu icon clicked');
+    var $menuList = $('.all-menu-list');
+    $menuList.toggleClass('open');
+    console.log('Menu open state:', $menuList.hasClass('open'));
+  });
+
+  // 외부 클릭 시 all-menu-list 숨기기
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.nav-all-menu').length) {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by outside click');
+    }
+  });
+
+  // ESC 키로 all-menu-list 숨기기
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape') {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by ESC key');
+    }
+  });
+
+  // =============================
+  // Mega menu (jQuery toggle)
+  // =============================
+  var $btns = $('.menu-btn');
+  var $panes = $('.mega');
+  function closeAll(){ $panes.removeClass('open'); $btns.attr('aria-expanded','false'); }
+  $btns.on('click', function(e){
+    e.preventDefault();
+    var $b=$(this); var id=$b.attr('aria-controls'); var $pane=$('#'+id);
+    var isOpen = $b.attr('aria-expanded')==='true';
+    if(isOpen){ closeAll(); }
+    else{ closeAll(); $pane.addClass('open'); $b.attr('aria-expanded','true'); }
+  });
+  $(document).on('click', function(e){ if($(e.target).closest('header,.mega').length===0){ closeAll(); }});
+  $(document).on('keydown', function(e){ if(e.key==='Escape'){ closeAll(); }});
+});
+</script>
+</body>
+</html>

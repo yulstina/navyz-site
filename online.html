@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <!-- Google Fonts: Noto Sans KR, Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/aabd5cc9c3.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <!-- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap GRID only (safe import) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"> 
+  <link rel="stylesheet" href="assets/css/util.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> NAVYZ</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+  <div id="sub-page" class="sub-page">
+    <!-- ============================= Header ============================= -->
+    <header>
+      <div class="container nav" role="navigation" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Home"> 
+          <img src="assets/images/navyz-logo2x.png" alt="Logo"> 
+        </a>
+
+        <nav class="menu">
+          <button type="button" class="menu-btn active" data-menu="product" aria-controls="mega-product" aria-expanded="false">Products <span class="chev"></span></button>
+          <!-- ============================= Mega: Products ============================= -->
+          <div id="mega-product" class="mega" role="region" aria-label="Products">
+            <div class="product-menu-list">
+              <a class="product-menu-item" href="products.html">
+                <span>POS &amp; Kiosk</span>
+              </a>
+              <a class="product-menu-item" href="online.html">
+                <span>Online Ordering</span>
+              </a>
+              <a class="product-menu-item" href="web.html">
+                <span>Web Solution</span>
+              </a>
+            </div>
+          </div>
+          <a href="blog.html" class="menu-link">Blog</a> 
+          <a href="login.html" class="menu-link">Login</a>
+        </nav>
+
+        <div class="nav-right">
+          <div class="nav-cta">
+            <a class="demo" href="contact.html">Free Demo <i class="fa-solid fa-arrow-right"></i></a> 
+          </div>
+          <div class="nav-all-menu">
+            <div class="all-menu-icon"> <img src="assets/images/all-menu.svg" alt="all-menu"></div>
+              <div class="all-menu-list">
+                <ul>
+                  <li><a href="contact.html">Free Demo</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li class="products-submenu">
+                    <span class="submenu-title">Products</span>
+                    <ul class="submenu-items">
+                      <li><a href="products.html">POS &amp; Kiosk</a></li>
+                      <li><a href="online.html">Online Ordering</a></li>
+                      <li><a href="web.html">Web Solution</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li> 
+                  <!-- <li><a class="demo" href="#">Free Demo <i class="fa-solid fa-arrow-right"></i></a> </li> -->
+                </ul>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class=" ">
+      <!-- ============================= section1 ============================= -->
+      <section class="bg-section" >
+        <div class="container">
+          <div class="section-content">
+            <span class="badge">Direct Ordering Solution</span>
+            <div class="wrap-box" style="padding-bottom: 50px;">
+              <div class="text-box">
+                <h2>Reclaim Undercut Online Sales with a Branded Website</h2>
+                <p>Take Online Orders Fast with Our Revolutionary Online Ordering Solution<br/>NAVYS's direct ordering solution is crafted to help you reclaim online traffic lost to third-party platforms, while offering delivery with ease. </p>
+                <a class="btn-more" href="contact.html">Contact us  <i class="fa-solid fa-angle-right"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-content border-box">
+            <span class="badge">White-Label Delivery</span>
+            <div class="wrap-box column">
+              <div class="text-box">
+                <h2>100% Commission-free, allow you to retain more profits</h2>
+                <p>White-label delivery allows customers to order through your branded direct online channels, paying a flat delivery fee, while third-party delivery networks handle the logistics. This lets you focus on preparing great food while retaining customer loyalty under your brand.</p>
+              </div>
+              <div class="sub-flex-box">
+                <div>
+                  <div>
+                    <h2>77%</h2>
+                    <p>Automates up to 90% of orders</p>
+                  </div>
+                  <div>
+                    <h2>25%</h2>
+                    <p>Saves 40% labor cost</p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h2>30%</h2>
+                    <p>Potential sale increase</p>
+                  </div>
+                  <div>
+                    <h2>$ 0 </h2>
+                    <p>Cost of maintaining an in-house delivery team</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section>
+        <div class="container">
+          <div class="section-content grid-box">
+            <section class="zigzag">
+              <div class="box text box1">
+                <span>Built-In SEO</span>
+                <h2>iOrderFoods</h2>
+                <p>Accept Online Orders from Your Own Website</p>
+                <p>Food technology has given customers the fast track to ordering all their favorite food conveniently online. iOrderFoods is an online ordering system built from the perspective of restaurant owners. A system that can personalize your brand, your food, and anything else you need. Get away from the competition, and personalize what’s yours today.</p>
+              </div>
+
+              <div class="box media box2">
+               <img src="assets/images/iof@2x.png">
+              </div>
+
+              <div class="box media box3">
+                <img src="assets/images/2go2go_bg.png">
+              </div>
+
+              <div class="box text box4">
+                <span>Online Branding</span>
+                <h2>2go2go</h2>
+                <p>Increase Your Takeout Sales <br/>
+                  with Our Online Marketplace Solution</p>
+                <p>2go2go allows restaurant owners to list their restaurant info and to set up the payment processing system. Promote your restaurant on our featured Online Food Ordering Marketplace. Increase your search visibility: you’re on the 2go2go network.</p>
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-content">
+            <span class="badge">Restaurant Online Ordering System</span>
+            <div class="wrap-box" style="padding-bottom: 50px;">
+              <div class="text-box">
+                <h2>Increase Your Takeout Sales with Our Online Marketplace Solution</h2>
+                <p>xpand your reach with an online ordering restaurant strategy that meets modern customers’ demands.
+                  Provide a frictionless way for patrons to order from restaurants online, cutting wait times and simplifying day-to-day operations to boost revenue and customer loyalty.<br/>NAVYS's direct ordering solution is crafted to help you reclaim online traffic lost to third-party platforms, while offering delivery with ease. </p>
+                <a class="btn-more" href="contact.html">Contact us  <i class="fa-solid fa-angle-right"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  <!-- ============================= Footer ============================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="top">
+            <div class="footer-logo"> <img src="assets/images/navyz-logo.png" alt="Footer Logo"></div>
+            <p>&copy; 2025 NZ System. All rights reserved.</p>
+          </div>
+          <div class="link-container">
+            <div class="link-item">
+              <h5>PRODUCTS</h5>
+              <ul>
+                <li><a href="products.html">POS &amp; Kiosk</a></li>
+                <!--            <li><a href="#">Handheld POS</a></li>-->
+                <!--            <li><a href="#">POS</a></li>-->
+                <!--            <li><a href="#">Ordering Tablet</a></li>-->
+                <!--            <li><a href="#">KDS</a></li>-->
+                <!--           <li><a href="#">Branded app</a></li>-->
+                <li><a href="online.html">Online Ordering</a></li>
+                <li><a href="web.html">Web Solution</a></li>
+              </ul>
+            </div>
+            <!--  <div class="link-item">
+                      <h5>INDUSTRIES</h5>
+                      <ul>
+                        <li><a href="#">Restaurant and QSR</a></li>
+                        <li><a href="#">Salon and SPA</a></li>
+                        <li><a href="#">Retail and Market</a></li>
+                     </ul>
+                   </div>
+                         -->
+
+            <div class="link-item">
+              <h5>COMPANY</h5>
+              <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="policy.html">Privacy policy</a></li>
+                <li><a href="terms.html">Terms of service</a></li>
+              </ul>
+            </div>
+
+            <div class="link-item">
+              <h5>RELATED SITES</h5>
+              <ul>
+                <li><a href="https://www.iorderfoods.com/">iOrderFoods</a> </li>
+                <li><a href="https://vvipcare.com/">VVIP Care</a></li>
+                <li><a href="https://hommeface.com/">HommeFace</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+  <script>
+    // sync header height variable to actual nav pill height
+    (function(){
+      const nav = document.querySelector('.nav');
+      if(!nav) return;
+      function sync(){
+        const h = Math.round(nav.getBoundingClientRect().height);
+        document.documentElement.style.setProperty('--header-h', h + 'px');
+      }
+      sync();
+      window.addEventListener('resize', sync);
+    })();
+
+  // =============================
+    // Mega menu open/close + outside click + ESC
+    // =============================
+    // Simple toggle for Products mega menu only
+    const productsBtn = document.querySelector('.menu-btn[data-menu="product"]');
+    const megaProduct = document.getElementById('mega-product');
+    
+    if (productsBtn && megaProduct) {
+      // Products button click
+      productsBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = megaProduct.classList.contains('open');
+        
+        // Toggle mega menu
+        if (isOpen) {
+          megaProduct.classList.remove('open');
+          productsBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          megaProduct.classList.add('open');
+          productsBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+      
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        const inHeader = !!e.target.closest('header');
+        const inMega = !!e.target.closest('#mega-product');
+        
+        if (!inHeader && !inMega) {
+          megaProduct.classList.remove('open');
+          productsBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Close on ESC key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          megaProduct.classList.remove('open');
+          productsBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // =============================
+    // Set --vh to handle mobile address bar changes
+    // =============================
+    const setVH = ()=>{
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight*0.01}px`);
+    };
+    setVH();
+    window.addEventListener('resize', setVH);
+
+    // =============================
+    // Optional: simple scroll-driven fade/scale per panel for polish
+    // =============================
+    const panels = document.querySelectorAll('.panel');
+    const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 68;
+    function onScroll(){
+      const vh = window.innerHeight;
+      panels.forEach((p, i)=>{
+        const r = p.getBoundingClientRect();
+        const start = headerH;                    // when sticky hits top
+        const end = r.height + headerH;           // when it would leave
+        const t = Math.min(1, Math.max(0, (end - r.top) / (end - start)));
+        // t: 0 (just pinned) → 1 (about to be covered)
+        const scale = 1 + (1 - t) * 0.02;         // slight push back
+        const op = 0.8 + t * 0.2;                 // soften then solidify
+        p.style.transform = `scale(${scale})`;
+        p.style.opacity = op;
+      });
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+
+    // =============================
+    // Scroll spy for nav highlight (anchors to #1-home, #2-home, #3-home)
+    // =============================
+    const spy = new IntersectionObserver((entries)=>{
+      entries.forEach(ent=>{
+        if(ent.isIntersecting){
+          const id = ent.target.id;
+          document.querySelectorAll('.menu a[href^="#"]').forEach(a=>a.classList.remove('active'));
+          const link = document.querySelector(`.menu a[href="#${id}"]`);
+          if(link) link.classList.add('active');
+        }
+      });
+    }, {rootMargin:"-40% 0px -50% 0px", threshold:0});
+    panels.forEach(p=>spy.observe(p));
+
+    // (예시) 메뉴에 직접 앵커 링크를 추가하려면 아래처럼 동적으로 삽입할 수 있음
+    // 실제로는 HTML에서 <a href="#1-home">Home</a> 형태로 작성 권장
+
+    // =============================
+    // Carousel controls (for .carousel, #carousel, #carousel2)
+    // =============================
+    document.querySelectorAll('.carousel-content').forEach(carouselContent => {
+      const cardWrap = carouselContent.querySelector('.card-wrap');
+      const prevBtn = carouselContent.querySelector('.carousel-nav.prev, .hw-nav.prev');
+      const nextBtn = carouselContent.querySelector('.carousel-nav.next, .hw-nav.next');
+      function step() {
+        const card = cardWrap?.querySelector('.card');
+        if(!card) return 300;
+        const w = card.getBoundingClientRect().width;
+        const gap = parseFloat(getComputedStyle(cardWrap).gap) || 0;
+        return w + gap;
+      }
+      function update() {
+        if(!cardWrap) return;
+        const max = cardWrap.scrollWidth - cardWrap.clientWidth - 1;
+        if(prevBtn) prevBtn.disabled = cardWrap.scrollLeft <= 0;
+        if(nextBtn) nextBtn.disabled = cardWrap.scrollLeft >= max;
+      }
+      if(prevBtn && nextBtn && cardWrap) {
+        prevBtn.addEventListener('click', ()=> cardWrap.scrollBy({left: -step(), behavior:'smooth'}));
+        nextBtn.addEventListener('click', ()=> cardWrap.scrollBy({left:  step(), behavior:'smooth'}));
+        cardWrap.addEventListener('scroll', update, {passive:true});
+        window.addEventListener('resize', update);
+        update();
+      }
+    });
+
+    // =============================
+    // Customer marquee setup (ensure seamless loop & reduced motion)
+    (function(){
+      const marquee = document.querySelector('.customer .marquee');
+      const ul = document.querySelector('.customer .logos');
+      if(!marquee || !ul) return;
+
+      // Duplicate once more at runtime in case content changes
+      ul.innerHTML = ul.innerHTML + ul.innerHTML;
+
+      // Respect reduced motion
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(prefersReduced){ ul.style.animation = 'none'; }
+    })();
+  // =============================
+  // Your brand, your app — scroll‑link (Y only) + logo‑synced slider
+  (function(){
+    const section = document.getElementById('yba');
+    const phone = document.getElementById('ybaPhone');
+    const track = document.getElementById('ybaTrack');
+    const logoBtns = Array.from(document.querySelectorAll('#ybaLogos button'));
+    if(!section || !phone || !track || logoBtns.length===0) return;
+
+    // ========== A) Scroll‑bound translateY (no tilt) ==========
+    let lastY = window.scrollY, target = 0, current = 0;
+    const max = 120, sens = 0.45, ease = 0.12;
+    function onScroll(){
+      const y = window.scrollY; const dy = y - lastY; lastY = y;
+      const rect = section.getBoundingClientRect(); const vh = window.innerHeight;
+      const near = rect.top < vh * 1.2 && rect.bottom > -vh * 0.2;
+      if(!near) return;
+      target -= dy * sens; target = Math.max(-max, Math.min(max, target));
+      requestTick();
+    }
+    let ticking = false; function requestTick(){ if(!ticking){ ticking=true; requestAnimationFrame(updateY); } }
+    function updateY(){ ticking=false; current += (target - current)*ease; phone.style.transform = `translateY(${current.toFixed(2)}px)`; if(Math.abs(target-current) > 0.1) requestAnimationFrame(updateY); }
+
+    // ========== B) Logo‑synced slider (slide inside phone) ==========
+    let index = 0, timer = null; const total = logoBtns.length; const DURATION = 3000; // ms
+    function go(i, opts={instant:false}){
+      index = (i + total) % total;
+      logoBtns.forEach((b,bi)=> b.classList.toggle('active', bi===index));
+      const pct = -index * 100;
+      if(opts.instant){ track.style.transition = 'none'; }
+      else{ track.style.transition = 'transform .6s cubic-bezier(.22,1,.36,1)'; }
+      track.style.transform = `translateX(${pct}%)`;
+      if(opts.instant){ requestAnimationFrame(()=> track.style.transition = 'transform .6s cubic-bezier(.22,1,.36,1)'); }
+    }
+    function play(){ if(timer) return; timer = setInterval(()=> go(index+1), DURATION); }
+    function pause(){ if(timer){ clearInterval(timer); timer=null; } }
+
+    logoBtns.forEach((btn,bi)=>{
+      btn.addEventListener('click', ()=>{ pause(); go(bi); play(); });
+      btn.addEventListener('mouseenter', pause); btn.addEventListener('mouseleave', play);
+      btn.addEventListener('focusin', pause); btn.addEventListener('focusout', play);
+    });
+    const stage = section.querySelector('.stage');
+    stage.addEventListener('mouseenter', pause); stage.addEventListener('mouseleave', play);
+
+    // Reduced motion: disable autoplay & transitions
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(prefersReduced){ pause(); track.style.transition='none'; }
+
+    // will-change toggles near viewport
+    const io = new IntersectionObserver((ents)=>{
+      ents.forEach(ent=>{
+        const on = ent.isIntersecting; phone.style.willChange = on ? 'transform' : 'auto'; track.style.willChange = on ? 'transform' : 'auto';
+        if(on && !prefersReduced) play(); else pause();
+      });
+    }, { root:null, rootMargin:'200px 0px', threshold:0 });
+    io.observe(section);
+
+    // init
+    go(0, {instant:true});
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', ()=>{ /* keep current index position on resize */ go(index, {instant:true}); });
+  })();
+</script>
+
+<script>
+// Failsafe: rebind mega menu toggle late, and ensure header height var is set
+(function(){
+  function syncHeader(){
+    const nav = document.querySelector('.nav');
+    if(!nav) return;
+    const h = Math.round(nav.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--header-h', h + 'px');
+  }
+  syncHeader();
+  window.addEventListener('resize', syncHeader);
+
+  const btn = document.querySelector('.menu-btn[aria-controls="mega-product"]');
+  const pane = document.getElementById('mega-product');
+  const allPanes = document.querySelectorAll('.mega');
+  const allBtns  = document.querySelectorAll('.menu-btn');
+  function closeAll(){ allPanes.forEach(m=>m.classList.remove('open')); allBtns.forEach(b=>b.setAttribute('aria-expanded','false')); }
+  function open(){ if(!pane||!btn) return; closeAll(); pane.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  if(btn){
+    btn.addEventListener('click', (e)=>{ e.preventDefault(); const openState = btn.getAttribute('aria-expanded')==='true'; if(openState){ closeAll(); } else { open(); }});
+  }
+  document.addEventListener('click', (e)=>{
+    const inHeader = !!e.target.closest('header');
+    const inMega   = !!e.target.closest('.mega');
+    const isBtn    = !!e.target.closest('.menu-btn');
+    if(!inHeader && !inMega){ closeAll(); }
+  });
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeAll(); });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+$(function(){
+  // =============================
+  // Header height sync (CSS var)
+  // =============================
+  function syncHeader(){ var h = $('.nav').outerHeight()||68; document.documentElement.style.setProperty('--header-h', h + 'px'); }
+  syncHeader(); $(window).on('resize', syncHeader);
+
+  // =============================
+  // Header scroll effect
+  // =============================
+  function checkScrolled() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 100) {
+      $('header').addClass('scrolled');
+    } else {
+      $('header').removeClass('scrolled');
+    }
+  }
+  
+  // 페이지 로드 시 스크롤 위치 확인
+  checkScrolled();
+  
+  // 스크롤 이벤트 리스너
+  $(window).on('scroll', checkScrolled);
+
+  // =============================
+  // All Menu Toggle
+  // =============================
+  $('.all-menu-icon').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('All menu icon clicked');
+    var $menuList = $('.all-menu-list');
+    $menuList.toggleClass('open');
+    console.log('Menu open state:', $menuList.hasClass('open'));
+  });
+
+  // 외부 클릭 시 all-menu-list 숨기기
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.nav-all-menu').length) {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by outside click');
+    }
+  });
+
+  // ESC 키로 all-menu-list 숨기기
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape') {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by ESC key');
+    }
+  });
+
+  // =============================
+  // Mega menu (jQuery toggle)
+  // =============================
+  var $btns = $('.menu-btn');
+  var $panes = $('.mega');
+  function closeAll(){ $panes.removeClass('open'); $btns.attr('aria-expanded','false'); }
+  $btns.on('click', function(e){
+    e.preventDefault();
+    var $b=$(this); var id=$b.attr('aria-controls'); var $pane=$('#'+id);
+    var isOpen = $b.attr('aria-expanded')==='true';
+    if(isOpen){ closeAll(); }
+    else{ closeAll(); $pane.addClass('open'); $b.attr('aria-expanded','true'); }
+  });
+  $(document).on('click', function(e){ if($(e.target).closest('header,.mega').length===0){ closeAll(); }});
+  $(document).on('keydown', function(e){ if(e.key==='Escape'){ closeAll(); }});
+
+  // =============================
+  // Set --vh for mobile
+  // =============================
+  function setVH(){ document.documentElement.style.setProperty('--vh', (window.innerHeight*0.01)+'px'); }
+  setVH(); $(window).on('resize', setVH);
+
+  // =============================
+  // Panels: subtle scale/opacity on scroll
+  // =============================
+  var $panels = $('.panel');
+  function onScrollPanels(){
+    var headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h'))||68;
+    $panels.each(function(){
+      var r = this.getBoundingClientRect();
+      var start = headerH, end = r.height + headerH;
+      var t = Math.min(1, Math.max(0, (end - r.top) / (end - start)));
+      var scale = 1 + (1 - t) * 0.02, op = 0.8 + t * 0.2;
+      this.style.transform = 'scale('+scale+')'; this.style.opacity = op;
+    });
+  }
+  onScrollPanels(); $(window).on('scroll', onScrollPanels);
+
+  // =============================
+  // Scroll spy (no IO)
+  // =============================
+  function spy(){
+    var mid = window.innerHeight/2, activeId=null;
+    $panels.each(function(){ var r=this.getBoundingClientRect(); if(r.top<=mid && r.bottom>=mid) activeId=this.id; });
+    $('.menu a[href^="#"]').removeClass('active');
+    if(activeId){ $('.menu a[href="#'+activeId+'"]').addClass('active'); }
+  }
+  spy(); $(window).on('scroll resize', spy);
+
+  // =============================
+  // Hardware carousel
+  // =============================
+  // 여러 개의 hw-carousel 지원
+  $('.hw-carousel').each(function(){
+    var $carousel = $(this);
+    var $track = $carousel.find('.hw-track');
+    var $prev = $carousel.find('.hw-nav.prev');
+    var $next = $carousel.find('.hw-nav.next');
+    function hwStep(){
+      var $card = $track.find('.hw-card').first();
+      if(!$card.length) return 300;
+      return $card.outerWidth(true) + (parseFloat($track.css('gap'))||0);
+    }
+    function hwUpdate(){
+      var el = $track.get(0);
+      if(!el) return;
+      var max = el.scrollWidth - el.clientWidth - 1;
+      $prev.prop('disabled', el.scrollLeft<=0);
+      $next.prop('disabled', el.scrollLeft>=max);
+    }
+    $prev.on('click', function(){
+      var el = $track.get(0);
+      el && el.scrollBy({left:-hwStep(), behavior:'smooth'});
+    });
+    $next.on('click', function(){
+      var el = $track.get(0);
+      el && el.scrollBy({left: hwStep(), behavior:'smooth'});
+    });
+    $track.on('scroll', hwUpdate);
+    $(window).on('resize', hwUpdate);
+    hwUpdate();
+  });
+
+  // =============================
+  // Customer marquee duplicate + reduced motion
+  // =============================
+  (function(){
+     var $ul = $('.customer .logos'); if(!$ul.length) return;
+     $ul.html($ul.html()+$ul.html());
+     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){ $ul.css('animation','none'); }
+  })();
+
+  // =============================
+  // YBA: scroll-linked translateY + logo-synced slider
+  // =============================
+  var $yba = $('#yba'), $phone = $('#ybaPhone'), $track2 = $('#ybaTrack'), $logos = $('#ybaLogos button');
+  // 각 버튼에 data-index 부여 (li 순서와 동일하게)
+  $logos.each(function(i){ $(this).attr('data-index', i); });
+  var lastY=window.scrollY, target=0, current=0, max=120, sens=0.18, ease=0.22, ticking=false;
+  function requestTick(){ if(!ticking){ ticking=true; requestAnimationFrame(updateY);} }
+  function updateY(){ ticking=false; current += (target-current)*ease; $phone.css('transform','translateY('+current.toFixed(2)+'px)'); if(Math.abs(target-current)>0.1){ requestAnimationFrame(updateY);} }
+  function onScrollYba(){ var y=window.scrollY; var dy=y-lastY; lastY=y; var rect=$yba.get(0).getBoundingClientRect(); var vh=window.innerHeight; var near= rect.top < vh*1.2 && rect.bottom > -vh*0.2; if(!near) return; target -= dy*sens; target = Math.max(-max, Math.min(max, target)); requestTick(); }
+  $(window).on('scroll', onScrollYba);
+
+  var idx=0, timer=null, total=$logos.length, DUR=1300; //오토플레이 속도
+  function go(i){
+    idx=(i+total)%total;
+    $logos.removeClass('active').eq(idx).addClass('active');
+    var pct=(-idx*100)+'%';
+    // 항상 동일한 transition 적용
+    $track2.css('transition','transform .6s cubic-bezier(.22,1,.36,1)');
+    $track2.css('transform','translateX('+pct+')');
+  }
+  function play(){ if(timer) return; timer=setInterval(function(){ go(idx+1); }, DUR); }
+  function pause(){ if(timer){ clearInterval(timer); timer=null; } }
+  // 버튼 클릭 시 data-index 기준으로 이동
+  $logos.on('click', function(){
+    pause();
+    var btnIdx = parseInt($(this).attr('data-index'), 10);
+    go(btnIdx);
+    play();
+  })
+  .on('mouseenter focusin', pause)
+  .on('mouseleave focusout', play);
+  $('.yba .stage').on('mouseenter', pause).on('mouseleave', play);
+
+  function nearCheck(){ var rect=$yba.get(0).getBoundingClientRect(); var vh=window.innerHeight; var on = rect.top < vh*1.2 && rect.bottom > -vh*0.2; if(on){ $phone.css('will-change','transform'); $track2.css('will-change','transform'); if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches) play(); } else { $phone.css('will-change','auto'); $track2.css('will-change','auto'); pause(); } }
+  nearCheck(); $(window).on('scroll resize', nearCheck);
+  go(0);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <!-- Google Fonts: Noto Sans KR, Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/aabd5cc9c3.js" crossorigin="anonymous"></script>
+
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <!-- Bootstrap GRID only (safe import) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"> 
+  <link rel="stylesheet" href="assets/css/util.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> NAVYZ</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+  <div id="sub-page" class="sub-page">
+    <!-- ============================= Header ============================= -->
+    <header>
+      <div class="container nav" role="navigation" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Home"> 
+          <img src="assets/images/navyz-logo2x.png" alt="Logo"> 
+        </a>
+
+        <nav class="menu">
+          <button type="button" class="menu-btn" data-menu="product" aria-controls="mega-product" aria-expanded="false">Products <span class="chev"></span></button>
+          <!-- ============================= Mega: Products ============================= -->
+          <div id="mega-product" class="mega" role="region" aria-label="Products">
+            <div class="product-menu-list">
+              <a class="product-menu-item" href="products.html">
+                <span>POS &amp; Kiosk</span>
+              </a>
+              <a class="product-menu-item" href="online.html">
+                <span>Online Ordering</span>
+              </a>
+              <a class="product-menu-item" href="web.html">
+                <span>Web Solution</span>
+              </a>
+            </div>
+          </div>
+          <a href="blog.html" class="menu-link">Blog</a> 
+          <a href="login.html" class="menu-link">Login</a>
+        </nav>
+
+        <div class="nav-right">
+          <div class="nav-cta">
+            <a class="demo" href="contact.html">Free Demo <i class="fa-solid fa-arrow-right"></i></a> 
+          </div>
+          <div class="nav-all-menu">
+            <div class="all-menu-icon"> <img src="assets/images/all-menu.svg" alt="all-menu"></div>
+              <div class="all-menu-list">
+                <ul>
+                  <li><a href="contact.html">Free Demo</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li class="products-submenu">
+                    <span class="submenu-title">Products</span>
+                    <ul class="submenu-items">
+                      <li><a href="products.html">POS &amp; Kiosk</a></li>
+                      <li><a href="online.html">Online Ordering</a></li>
+                      <li><a href="web.html">Web Solution</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li> 
+                  <!-- <li><a class="demo" href="#">Free Demo <i class="fa-solid fa-arrow-right"></i></a> </li> -->
+                </ul>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="blog-section">
+      <div class="container">
+        <div class="main-text">
+          <h2 class="main-title"> <strong>Location</strong></h2>
+          <p >NAVYZ, powered by Bankcard Services, is dedicated to pursuing excellence and providing opportunity to the business owners of America.<br/>
+            Our staff of 160 employees is located in 11 branch offices across the U.S.
+          </p>
+        </div>
+        <div class="blog-hero section-content border-box">
+          <!-- Google Maps simple embed (no API key) -->
+          <iframe
+                  width="100%"
+                  height="420"
+                  style="border:0; border-radius:12px;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=21281%20S.%20Western%20Ave.%20Torrance,%20CA%2090501&output=embed">
+          </iframe>
+
+        </div>
+
+        <div class="grid-container location">
+
+          <a class="grid-item " >
+            <div class="blog-info">
+              <div class="blog-date"><strong> <i class="fa-solid fa-location-dot"></i> Headquarters</strong></div>
+              <h3>21281 S. Western Ave. Torrance, CA 90501</h3>
+              <p>Tel. 1-213-365-1122 <br/>
+              Customer Service: 888.339.0100</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong> <i class="fa-solid fa-location-dot"></i> Seattle Branch</strong></div>
+              <h3>33309 1st Way S. Ste A-210 Federal Way, WA 98003</h3>
+              <p>Phone: 253.838.1588</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> Virginia Branch</strong></div>
+              <h3>1952 Gallows Rd Ste 216,
+                Vienna, VA 22182  </h3>
+              <p>Phone: 703.748.6071</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> Los Angeles Branch</strong></div>
+              <h3>3055 Wilshire Blvd. #620, Los Angeles,
+                CA 90010 </h3>
+              <p>Phone: 213.382.9300</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> Houston Branch</strong></div>
+              <h3>810 Hwy 6 South Ste 113, Houston  TX 77079  </h3>
+              <p> Phone: 281.531.6669</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> New York Branch</strong></div>
+              <h3>107 Northern Blvd. Suite 408, Great Neck, NY 11021  </h3>
+              <p>Phone: 718.460.5493</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> San Jose Branch</strong></div>
+              <h3>1101 S. Winchester Blvd, Suite L-240
+                San Jose, CA 95128</h3>
+              <p>Phone: 408.720.1500</p>
+            </div>
+          </a>
+          <a class="grid-item" >
+            <div class="blog-info">
+              <div class="blog-date"><strong><i class="fa-solid fa-location-dot"></i> Georgia Branch</strong></div>
+              <h3>2250 Satellite Blvd. #250  Duluth, GA 30097</h3>
+              <p>  Office: 678.957.9839</p>
+              <p> Fax: 678.957.9869</p>
+            </div>
+          </a>
+
+        </div>
+      </div>  
+    </section>
+ 
+ 
+  </div>
+
+  <!-- ============================= Footer ============================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="top">
+          <div class="footer-logo"> <img src="assets/images/navyz-logo.png" alt="Footer Logo"></div>
+          <p>&copy; 2025 NZ System. All rights reserved.</p>
+        </div>
+        <div class="link-container">
+          <div class="link-item">
+            <h5>PRODUCTS</h5>
+            <ul>
+              <li><a href="products.html">POS &amp; Kiosk</a></li>
+              <!--            <li><a href="#">Handheld POS</a></li>-->
+              <!--            <li><a href="#">POS</a></li>-->
+              <!--            <li><a href="#">Ordering Tablet</a></li>-->
+              <!--            <li><a href="#">KDS</a></li>-->
+              <!--           <li><a href="#">Branded app</a></li>-->
+              <li><a href="online.html">Online Ordering</a></li>
+                <li><a href="web.html">Web Solution</a></li>
+            </ul>
+          </div>
+          <!--  <div class="link-item">
+                    <h5>INDUSTRIES</h5>
+                    <ul>
+                      <li><a href="#">Restaurant and QSR</a></li>
+                      <li><a href="#">Salon and SPA</a></li>
+                      <li><a href="#">Retail and Market</a></li>
+                   </ul>
+                 </div>
+                       -->
+
+          <div class="link-item">
+            <h5>COMPANY</h5>
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="policy.html">Privacy policy</a></li>
+              <li><a href="terms.html">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="link-item">
+            <h5>RELATED SITES</h5>
+            <ul>
+              <li><a href="https://www.iorderfoods.com/">iOrderFoods</a> </li>
+              <li><a href="https://vvipcare.com/">VVIP Care</a></li>
+              <li><a href="https://hommeface.com/">HommeFace</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+$(function(){
+  // =============================
+  // Header height sync (CSS var)
+  // =============================
+  function syncHeader(){ var h = $('.nav').outerHeight()||68; document.documentElement.style.setProperty('--header-h', h + 'px'); }
+  syncHeader(); $(window).on('resize', syncHeader);
+
+  // =============================
+  // Header scroll effect
+  // =============================
+  function checkScrolled() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 100) {
+      $('header').addClass('scrolled');
+    } else {
+      $('header').removeClass('scrolled');
+    }
+  }
+  
+  // 페이지 로드 시 스크롤 위치 확인
+  checkScrolled();
+  
+  // 스크롤 이벤트 리스너
+  $(window).on('scroll', checkScrolled);
+
+  // =============================
+  // All Menu Toggle
+  // =============================
+  $('.all-menu-icon').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('All menu icon clicked');
+    var $menuList = $('.all-menu-list');
+    $menuList.toggleClass('open');
+    console.log('Menu open state:', $menuList.hasClass('open'));
+  });
+
+  // 외부 클릭 시 all-menu-list 숨기기
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.nav-all-menu').length) {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by outside click');
+    }
+  });
+
+  // ESC 키로 all-menu-list 숨기기
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape') {
+      $('.all-menu-list').removeClass('open');
+      console.log('Menu closed by ESC key');
+    }
+  });
+
+  // =============================
+  // Mega menu (jQuery toggle)
+  // =============================
+  var $btns = $('.menu-btn');
+  var $panes = $('.mega');
+  function closeAll(){ $panes.removeClass('open'); $btns.attr('aria-expanded','false'); }
+  $btns.on('click', function(e){
+    e.preventDefault();
+    var $b=$(this); var id=$b.attr('aria-controls'); var $pane=$('#'+id);
+    var isOpen = $b.attr('aria-expanded')==='true';
+    if(isOpen){ closeAll(); }
+    else{ closeAll(); $pane.addClass('open'); $b.attr('aria-expanded','true'); }
+  });
+  $(document).on('click', function(e){ if($(e.target).closest('header,.mega').length===0){ closeAll(); }});
+  $(document).on('keydown', function(e){ if(e.key==='Escape'){ closeAll(); }});
+});
+</script>
+</body>
+</html>
