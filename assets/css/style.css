@@ -1838,9 +1838,10 @@ a.blog-hero:hover .blog-hero-image img{ transform:scale(1.03); }
 .step-num{
     display:block; font-size:clamp(120px,16vw,240px); line-height:.86; font-weight:400;
     letter-spacing:-.04em; margin-bottom:-12px;
-    background:none;
-    -webkit-text-fill-color:#93a7c4; color:#93a7c4;
-    opacity:.9;
+    background-image:linear-gradient(180deg, #7f96b8 0%, #a8b8ce 58%, #eef2f7 88%, #ffffff 100%);
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent; color:transparent;
+    opacity:1;
     user-select:none; pointer-events:none;
 }
 .step-text{ border-left:2px solid #354c9c; padding-left:20px; }
