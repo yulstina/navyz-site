@@ -501,7 +501,7 @@
       if(prefersReduced){ ul.style.animation = 'none'; }
     })();
   // =============================
-  // Your brand, your app — scroll‑link (Y only) + logo‑synced slider
+  // Your brand, your app: scroll-linked (Y only) + logo-synced slider
   (function(){
     const section = document.getElementById('yba');
     const phone = document.getElementById('ybaPhone');
@@ -747,6 +747,7 @@ $(function(){
   // YBA: scroll-linked translateY + logo-synced slider
   // =============================
   var $yba = $('#yba'), $phone = $('#ybaPhone'), $track2 = $('#ybaTrack'), $logos = $('#ybaLogos button');
+  if (!$yba.length || !$phone.length || !$track2.length || !$logos.length) return;
   // 각 버튼에 data-index 부여 (li 순서와 동일하게)
   $logos.each(function(i){ $(this).attr('data-index', i); });
   var lastY=window.scrollY, target=0, current=0, max=120, sens=0.18, ease=0.22, ticking=false;

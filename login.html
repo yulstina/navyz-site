@@ -22,7 +22,7 @@
   
   </style>
 </head>
-<body>
+<body class="login-page">
   <div class="login-container">
     <div class="login-wrapper">
       <div class="login-card">
@@ -61,77 +61,5 @@
       </div>
     </div>
   </div>
- 
-<script>
-$(function(){
-  // =============================
-  // Header height sync (CSS var)
-  // =============================
-  function syncHeader(){ var h = $('.nav').outerHeight()||68; document.documentElement.style.setProperty('--header-h', h + 'px'); }
-  syncHeader(); $(window).on('resize', syncHeader);
-
-  // =============================
-  // Header scroll effect
-  // =============================
-  function checkScrolled() {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop > 100) {
-      $('header').addClass('scrolled');
-    } else {
-      $('header').removeClass('scrolled');
-    }
-  }
-  
-  // 페이지 로드 시 스크롤 위치 확인
-  checkScrolled();
-  
-  // 스크롤 이벤트 리스너
-  $(window).on('scroll', checkScrolled);
-
-  // =============================
-  // All Menu Toggle
-  // =============================
-  $('.all-menu-icon').on('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    console.log('All menu icon clicked');
-    var $menuList = $('.all-menu-list');
-    $menuList.toggleClass('open');
-    console.log('Menu open state:', $menuList.hasClass('open'));
-  });
-
-  // 외부 클릭 시 all-menu-list 숨기기
-  $(document).on('click', function(e) {
-    if (!$(e.target).closest('.nav-all-menu').length) {
-      $('.all-menu-list').removeClass('open');
-      console.log('Menu closed by outside click');
-    }
-  });
-
-  // ESC 키로 all-menu-list 숨기기
-  $(document).on('keydown', function(e) {
-    if (e.key === 'Escape') {
-      $('.all-menu-list').removeClass('open');
-      console.log('Menu closed by ESC key');
-    }
-  });
-
-  // =============================
-  // Mega menu (jQuery toggle)
-  // =============================
-  var $btns = $('.menu-btn');
-  var $panes = $('.mega');
-  function closeAll(){ $panes.removeClass('open'); $btns.attr('aria-expanded','false'); }
-  $btns.on('click', function(e){
-    e.preventDefault();
-    var $b=$(this); var id=$b.attr('aria-controls'); var $pane=$('#'+id);
-    var isOpen = $b.attr('aria-expanded')==='true';
-    if(isOpen){ closeAll(); }
-    else{ closeAll(); $pane.addClass('open'); $b.attr('aria-expanded','true'); }
-  });
-  $(document).on('click', function(e){ if($(e.target).closest('header,.mega').length===0){ closeAll(); }});
-  $(document).on('keydown', function(e){ if(e.key==='Escape'){ closeAll(); }});
-});
-</script>
 </body>
 </html>
